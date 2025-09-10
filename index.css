@@ -14,6 +14,7 @@ ul {
 a {
     color: white;
     text-decoration: none;
+    font-size: 20px;
 }
 
 
@@ -26,7 +27,7 @@ header img {
     width: 200px;
     height: 200 px;
     border-radius: 50%;
-    border: 2px solid rgb(135, 192, 247);
+    border: 3px solid rgb(135, 192, 247);
     margin-bottom: 2%;
     margin-top: -5px;
 }
