@@ -12,6 +12,11 @@ body {
     margin: 0;
     padding: 0;
     line-height: 1.6;
+    @media screen and (max-width: 768px) {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+    }
 }
 
 .container {
@@ -19,20 +24,42 @@ body {
     margin: 0 auto;
     padding: 50px;
     @media screen and (max-width:768px) {
-        padding: 0 16px;
+        padding: 50px 16px;
     }
 }
+
+
 
 .description {
     display: flex;
     flex-direction: column;
     justify-content: center;
     width: 70%;
+    @media screen and (max-width:768px) {
+        width: 100%;
+    }
 }
 
 .image-div {
     border-radius: 20px;
-    width: 30%;
+    width:  30%;
+     @media screen and (max-width:768px) {
+        width: 100%;
+        height: 500px;
+    }
+}
+.show_desktop {
+    display: block;
+    @media screen and (max-width:768px) {
+      display: none;
+    }
+}
+
+.show_mobile {
+    display: none;
+    @media screen and (max-width:768px) {
+      display: block;
+    }
 }
 
 .image {
@@ -45,7 +72,12 @@ body {
 
 .project {
     display: flex;
-    gap: 16px
+    gap: 16px;
+    @media screen and (max-width:768px) {
+        padding: 0 16px;
+        flex-direction: column;
+        
+    }
 }
 
 /* Títulos */
@@ -60,6 +92,7 @@ body {
 
 /* Texto */
 .text {
+    
     padding: 16px;
     margin: 0;
     text-align: left;
@@ -68,22 +101,4 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
 }
 
-
-/* Imagens */
-.imagem-resized,
-.imagem-final {
-    max-width:100% ;
-    display: flex;
-    border-radius: 30px;
-    justify-content: center;     
-}
-
-.imagem-resized img,
-.imagem-final img {
-    max-width: 80%;
-    height: auto;
-    border-radius: 30px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
-    margin-top: 3%;
-}
 
