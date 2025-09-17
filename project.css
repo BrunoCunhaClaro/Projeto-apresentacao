@@ -24,7 +24,7 @@ body {
     margin: 0 auto;
     padding: 50px;
     @media screen and (max-width:768px) {
-        padding: 50px 16px;
+        padding: 50px+ 16px;
     }
 }
 
